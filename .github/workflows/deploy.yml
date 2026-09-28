@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -27,6 +27,7 @@ jobs:
 
       - name: Generate Delta Manifest
         run: |
+          mkdir -p sgd-out
           sf sgd source delta --to "HEAD" --from "HEAD~1" --output-dir sgd-out --source-dir force-app
 
       - name: Deploy to Salesforce
