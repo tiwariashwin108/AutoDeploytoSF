@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Reactivity" class="slds-m-around_large">
+
+            <div class="slds-p-around_medium">
+                Address : {userAddress}
+            </div>
+
+            <div class="slds-p-around_medium">
+                <lightning-button label ="Click" onclick={updateAddress}> </lightning-button> 
+            </div>
+
+            <div class="slds-p-around_medium">
+                Child Reactivity:  <c-reactivity-child user-address = {userAddress} list-users ={listUsers}></c-reactivity-child>
+            </div>
+        
+            <div class="slds-p-around_medium"> 
+                <template for:each={listUsers} for:item="oneByone">
+                    Name of user is = {oneByone.name}
+                    Address of user is = {oneByone.address.street}
+                       
+                </template>
+
+            </div>
+
+
+    </lightning-card>
+</template>

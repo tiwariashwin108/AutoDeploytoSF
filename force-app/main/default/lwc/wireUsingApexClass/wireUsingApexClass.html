@@ -1,0 +1,21 @@
+<template>
+    <lightning-card >
+
+        <div class="slds-align_absolute-center slds-text-heading_large" >
+            List of Cases fetched from Apex Class method
+        </div>
+
+        <ul class="slds-p-left_medium">
+
+        <template for:each={caseList} for:item="eachCase">
+            <li key={eachCase.id} class ="slds-p-left_small" >
+                <b>{eachCase.Name}</b> - {eachCase.AlreadyNameSpac__Active__c}
+
+            </li>
+        
+
+        </template>
+        </ul>
+
+    </lightning-card>
+</template>

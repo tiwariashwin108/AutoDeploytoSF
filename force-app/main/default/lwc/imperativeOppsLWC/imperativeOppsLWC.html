@@ -1,0 +1,23 @@
+<template>
+    <lightning-card>
+
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input value={stageValue} type="text" label="Enter Stage Name" placeholder="type here..." onchange={handleStage} required></lightning-input>
+            </div>
+        </div>
+
+        <lightning-button variant="brand" label="Search" title="Search" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+        <template if:true={showTable}>
+
+                <lightning-datatable
+                        key-field="Id"
+                        data={oppList}
+                        columns={columns}>
+                </lightning-datatable>
+
+        </template>
+
+    </lightning-card>
+</template>

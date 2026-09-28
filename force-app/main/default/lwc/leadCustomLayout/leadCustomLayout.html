@@ -1,0 +1,47 @@
+<template>
+    <lightning-card>
+        
+        <div class = "slds-text-align_center">
+           <strong>Lead Custom Layout Component</strong> 
+        </div>
+
+        <div class="slds-p-around_small" >
+           
+        <lightning-messages></lightning-messages>
+
+        <lightning-input type ="text" label = "First Name" required onchange={handleFirstName}></lightning-input>
+        <lightning-input type ="text" label = "Last Name" required onchange={handleLastName}></lightning-input>
+        <lightning-input type ="text" label = "Company Name" required onchange={handleCompanyName}></lightning-input>
+
+        
+       
+        <lightning-combobox
+                name="Lead Status"
+                label="Lead Status"
+                placeholder="Select Lead Status"
+                options={options}
+                required onchange={handleStatus}>
+        </lightning-combobox>
+
+        <lightning-combobox
+                name="Lead Industry"
+                label="Lead Industry"
+                placeholder="Select Lead Industry"
+                options={Industries}
+                required onchange={handleIndustries}>
+        </lightning-combobox>
+
+        </div>
+
+         <lightning-button variant="brand" label="Create Lead Record" title="Create Lead Record" onclick={handleClick} class="slds-align_absolute-center"></lightning-button>
+
+    </lightning-card>
+    
+
+   <!--  Last Name
+    First Name
+    Lead Status - picklist-->
+
+
+
+</template>

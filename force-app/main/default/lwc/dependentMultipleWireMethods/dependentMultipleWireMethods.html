@@ -1,0 +1,20 @@
+<template>
+
+    <lightning-card>
+        
+        {accountName}
+
+        <template for:each={taskList} for:item="eachTaks">
+
+            <li key={eachTaks.Id}> 
+                {eachTaks.Id} - <b>{eachTaks.What.Name}</b> - {eachTaks.Description} - {eachTaks.TaskSubtype} 
+            </li>
+
+
+        </template>
+
+
+    </lightning-card>
+    
+    
+</template>

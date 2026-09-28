@@ -1,0 +1,25 @@
+<template>
+    <lightning-card>
+
+        <template for:each={caseList} for:item ="eachCase">
+            
+                <li key={eachCase.Id}>
+                    {eachCase.Id} - {eachCase.Origin} - {eachCase.CaseNumber} - {eachCase.ClosedDate}
+                </li>
+
+        </template>
+
+    </lightning-card>
+
+    <lightning-card>
+
+            <template for:each={taskList} for:item ="eachTask">
+
+                    <li key={eachTask.Id}>
+                        {eachTask.Id} - {eachTask.Subject}
+                    </li>
+
+            </template>
+
+    </lightning-card>
+</template>

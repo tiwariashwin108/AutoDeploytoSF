@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Create a Account record From Scratch layout">
+
+        <div class="slds-p-around_medium lgc-bg">
+
+            <lightning-input type="text" label="Enter Account Name" placeholder="Account Name" required onchange={handleAccountName}></lightning-input>
+
+            <lightning-combobox
+                name="Industry"
+                label="Industry"
+                placeholder="Select Industry"
+                options={options}
+                onchange={handleIndustry}
+             >
+            </lightning-combobox>
+
+            <br>
+
+            <lightning-input label="Account Number" type="text"  required onchange={handleCheckbox}></lightning-input>
+
+
+        </div>
+
+        <div>
+            <lightning-button variant="brand-outline" label="Create Account" title="Create Account" onclick={handleClick} icon-name="utility:account" class="slds-align_absolute-center"></lightning-button>
+        </div>
+
+    </lightning-card>
+
+    <!--// create input elements 
+    //map them to objects and fields
+    //use create record -->
+</template>

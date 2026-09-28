@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Create Opp Record from Scratch Layout">
+
+        <div class="slds-p-around_medium">
+            <lightning-messages></lightning-messages>
+           
+            <lightning-input type="text" label="Enter Opportunity Name" placeholder="Enter Opportunity Name" required onchange={handleName}></lightning-input>
+
+             <lightning-input type="date" label="Close Date" required onchange={handleDate}></lightning-input>
+
+            <lightning-combobox
+                name="stage"
+                label="Stage"
+                placeholder="Select Stage"
+                options={options}
+                required onchange={handleStage}>
+            </lightning-combobox>
+
+            <lightning-button variant="brand" label="Create Opp Record" title="Create Opp Record" onclick={handleClick} class="slds-align_absolute-center slds-m-top_x-large"></lightning-button>
+
+
+        </div>
+    </lightning-card>
+</template>

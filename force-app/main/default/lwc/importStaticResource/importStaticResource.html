@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Below Image is uploaded by Lwc using Static resources">
+        <img src={showSvg}>
+        <br>
+        <template lwc:if={valueOfCustomLabel}>
+            This is Production org         
+        </template>
+
+        <template lwc:else>
+            This is Sandbox org
+
+        </template>
+
+        
+    </lightning-card>
+</template>

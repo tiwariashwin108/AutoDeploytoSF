@@ -1,0 +1,13 @@
+<template>
+
+    <lightning-card  title= "Two way binding"  >
+
+ <lightning-input class ="slds-p-around_small" value={storeValue} onchange= {callChangeEvent} type="text" label="Enter some text"></lightning-input>
+<p class ="slds-p-around_small">The Value entered above is : {storeValue} </p>
+<button onclick= {callChangeEvent}>Check the paragraph</button>
+
+    </lightning-card>
+    <p>Hello</p>
+    <p> hi </p>
+
+</template>

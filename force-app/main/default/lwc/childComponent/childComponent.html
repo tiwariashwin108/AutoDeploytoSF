@@ -1,0 +1,18 @@
+<template>
+    <p> Hi , {childVar}</p>
+    <br>
+    <p>{message}</p>
+    <br>
+    <p>{obj.name}</p>
+     
+    <template lwc:if={hasData}>
+        <template for:each={objArray} for:item="varitem">   
+            <p key={varitem.id}>Name = {varitem.name} , Age = {varitem.age} </p>
+           
+       </template>
+    </template>
+    <p>{showChildMethodVar}</p>
+
+
+
+</template>

@@ -1,0 +1,39 @@
+<template>
+    <lightning-card title="Custom View/Edit Layout">
+        <lightning-record-edit-form
+        record-id = {recordId}
+        object-api-name = {objectApiName}
+        >
+       
+
+        <div class="slds-grid slds-wrap slds-m-left_x-small">
+            <div class="slds-col slds-size_6-of-12">
+                <lightning-input-field field-name="Name"></lightning-input-field>   
+            </div>
+            <div class="slds-col slds-size_6-of-12">
+                <lightning-input-field field-name="AlreadyNameSpac__Read_Only_FSL__c" required></lightning-input-field>   
+            </div>
+        </div>
+
+        <div class="slds-grid slds-wrap slds-m-left_x-small">
+            <div class="slds-col slds-size_6-of-12">
+                <lightning-input-field field-name="BillingAddress"></lightning-input-field>   
+            </div>
+            <div class="slds-col slds-size_6-of-12">
+                <lightning-input-field field-name="AlreadyNameSpac__Picklist_1__c"></lightning-input-field>   
+            </div>
+        </div>
+
+        <div class="slds-grid slds-wrap slds-m-left_x-small">
+            <div class="slds-col slds-size_12-of-12">
+                <lightning-input-field field-name="AlreadyNameSpac__Regex__c"></lightning-input-field>   
+            </div>
+        </div>
+
+
+
+        <lightning-button type="submit" label="Save" class = "slds-align_absolute-center"></lightning-button>
+        </lightning-record-edit-form>
+
+    </lightning-card>
+</template>

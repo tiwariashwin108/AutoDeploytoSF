@@ -1,0 +1,17 @@
+<template>
+    <lightning-card> 
+        <div class="slds-m-around_large">
+            <p> <b> {parentVar} </b>  </p>  
+            <br>
+    <c-child-component message = 'Sending message from Parent to child' obj ={parentObj} obj-array={parentArrayOfObj}></c-child-component> 
+    <br>     
+    <lightning-button label="click" title="click" onclick={handleClicks}></lightning-button>
+
+        </div>
+        
+
+    </lightning-card>
+    
+
+
+</template>

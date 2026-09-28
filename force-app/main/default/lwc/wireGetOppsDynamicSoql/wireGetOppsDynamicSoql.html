@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title = 'Dyanmic Where Clause for List of Opps'>
+
+       <!--  <template for:each = {OppList} for:item ='Opp'>
+            <div key = {Opp.Id}>
+                 <b>{Opp.Id}</b> - {Opp.Amount} - {Opp.Name} - {Opp.StageName}
+            </div>
+        </template> -->
+
+
+        <lightning-datatable
+            key-field="Id"
+            data={OppList}
+            columns={columns}>
+        </lightning-datatable>
+
+        
+
+    </lightning-card>
+
+
+    
+</template>

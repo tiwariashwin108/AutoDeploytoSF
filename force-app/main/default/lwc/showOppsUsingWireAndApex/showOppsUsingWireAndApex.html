@@ -1,0 +1,26 @@
+<template>
+    <lightning-card >
+        <div class ="slds-align_absolute-center slds-text-heading_large" >
+            List of Opps from Apex using Wire
+        </div>
+
+        <!-- <div class ="slds-m-left_medium slds-m-vertical_small">
+            <template for:each={oppsList} for:item="eachOpp">
+           <ul key={eachOpp.id} >         
+            <li >
+                {eachOpp.name} - {eachOpp.StageName}
+            </li>
+            </ul>
+        </template> !-->
+
+
+        <lightning-datatable
+                key-field="id"
+                data={oppsList}
+                columns={columns}>
+                
+        </lightning-datatable>
+
+        </div>
+    </lightning-card>
+</template>

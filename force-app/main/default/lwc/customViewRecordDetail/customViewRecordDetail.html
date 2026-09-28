@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Show Custom view of Record in rows and columns">
+        <lightning-record-view-form 
+        record-id = {recordId}
+        object-api-name = {objectApiName}
+        >
+
+        <div class="slds-grid slds-wrap slds-m-left_x-small">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-output-field field-name="Name"></lightning-output-field>               
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-output-field field-name="AlreadyNameSpac__Picklist_1__c"></lightning-output-field>               
+                </div>                
+        </div>
+
+        <div class="slds-grid slds-wrap slds-m-left_x-small">
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-output-field field-name="BillingAddress"></lightning-output-field>               
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-output-field field-name="AlreadyNameSpac__Read_Only_FSL__c"></lightning-output-field>               
+                </div>                
+        </div>
+
+
+
+        </lightning-record-view-form>
+
+    </lightning-card>
+</template>

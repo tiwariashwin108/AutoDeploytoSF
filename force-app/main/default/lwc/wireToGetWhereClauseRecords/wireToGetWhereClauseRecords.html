@@ -1,0 +1,9 @@
+<template>
+    <lightning-card>
+        <template for:each={taskList} for:item="eachTask">
+            <li key={eachTask.Id}>
+                <b>{eachTask.Subject}</b>
+            </li>
+        </template>
+    </lightning-card>
+</template>

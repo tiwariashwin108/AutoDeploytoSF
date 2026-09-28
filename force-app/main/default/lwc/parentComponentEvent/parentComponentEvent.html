@@ -1,0 +1,23 @@
+<template>
+    
+        <lightning-card> 
+            <div class = "slds-m-around_medium">
+                <template if:true={storeChildValue}>
+                    <template for:each={storeChildValue} for:item="each">
+                        <div key={each.idn}>
+                                The info is From Child : 
+                                {each.idn} - {each.name} - {each.pin}
+                        </div>
+                        
+                    </template>
+                </template>
+                        
+                <br>
+                <c-child-component-event onsendtoparent={getChildInfo}></c-child-component-event>
+                
+            
+            </div>
+
+        </lightning-card>
+    
+</template>

@@ -1,0 +1,44 @@
+<template>
+    <lightning-card title="Create a Account Record using lightning-record-edit-form">
+        <lightning-record-edit-form
+        object-api-name = "Account"      >
+        
+            <div class="slds-grid slds-wrap slds-p-around_medium">
+                
+                <div class="slds-col slds-size_1-of-1">
+                    <lightning-input-field field-name="Name"></lightning-input-field>
+                </div>
+
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field field-name="AlreadyNameSpac__Picklist_1__c"></lightning-input-field>
+                </div>
+
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field field-name="AlreadyNameSpac__Read_Only_FSL__c"></lightning-input-field>
+                </div>
+
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field field-name="Industry"></lightning-input-field>
+                </div>
+
+                 <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field field-name="Site"></lightning-input-field>
+                </div>  
+                
+                
+                <div class="slds-align_absolute-center">
+                    <lightning-button type="submit" label="Save" class = "slds-p-right_small"></lightning-button>
+                    <lightning-button type="reset" label="Reset"></lightning-button>
+                </div>
+                
+
+                
+
+            </div>
+            
+        
+
+        </lightning-record-edit-form>
+
+    </lightning-card>
+</template>

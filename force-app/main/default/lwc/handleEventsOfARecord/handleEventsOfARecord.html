@@ -1,0 +1,54 @@
+<template>
+    <lightning-card>
+        <div class="slds-text-align_center slds-text-heading_medium slds-p-around_small">
+        Event handling of LDS
+        </div>
+        <lightning-messages></lightning-messages>
+        <lightning-record-edit-form
+        object-api-name = "Account"
+        onsuccess= {handleSuccess}
+        onsubmit= {handleSubmit}
+        onerror= {handleError}
+
+
+        >
+
+        <div class="slds-grid slds-wrap slds-p-around_small">
+
+            <div class="slds-col slds-size_1-of-2">
+            <lightning-input-field field-name ="Name"></lightning-input-field>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">
+            <lightning-input-field field-name ="Phone"></lightning-input-field>
+            </div>
+
+        </div>
+
+
+        <div class="slds-grid slds-wrap slds-p-around_small">
+
+            <div class="slds-col slds-size_1-of-2">
+            <lightning-input-field field-name ="AlreadyNameSpac__Active__c"></lightning-input-field>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">
+           <lightning-input-field field-name ="AlreadyNameSpac__Lat__c"></lightning-input-field>
+            </div>
+
+        </div>
+
+
+        <div class="slds-grid slds-wrap slds-align_absolute-center">
+
+            
+            <lightning-button type="submit" label ="Create Record" variant="Brand" class="slds-p-right_small"></lightning-button>
+            
+            <lightning-button type="reset" label ="Reset" variant="brand-outline"></lightning-button>
+            
+
+        </div>
+
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

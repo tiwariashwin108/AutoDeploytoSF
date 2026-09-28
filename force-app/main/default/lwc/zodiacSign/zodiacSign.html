@@ -1,0 +1,22 @@
+<template>
+
+<lightning-card title = "Check your Zodiac Sign" > 
+
+        <lightning-input type="text" value={storeName} onchange={handleChangeName} label="Enter your name" 
+        class="slds-m-around_x-small"></lightning-input>
+
+        <lightning-input type="date" value={storeDateOfBirth} onchange={handleChangeBirth} 
+        label="Enter your date of birth" class="slds-m-around_x-small"></lightning-input>
+
+        <lightning-button variant="brand" label="Check" onclick={handleSubmit} title="Check" 
+        class="slds-align_absolute-center"></lightning-button>
+
+</lightning-card>
+
+        {showSignToUser.sign}
+        <br>
+        {showSignToUser.emoji}
+        <br>
+        {showSignToUser.trait}
+
+</template>

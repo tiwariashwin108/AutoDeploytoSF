@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title ='Get field value and Get Record UI '>
+
+        Opportunity name: {OppName} 
+        <br>
+        Account name : {AccName}
+
+        <template if:true={errorIfAny}>
+            <p style="color:red;">Error: {errorIfAny}</p>
+        </template>
+
+
+    </lightning-card>
+
+</template>
