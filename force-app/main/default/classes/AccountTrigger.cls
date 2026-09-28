@@ -2,6 +2,9 @@ public class AccountTrigger
 {
 Public static void method (List<Account>A)
 {
+
+    //ignore
+    
     if(A!=Null)
     {
         for(Account A1:A)
